@@ -8,7 +8,11 @@ Familiarize ourselves with libGTX
 
 
 #### Backlog ###################################################################<Next release marker
-																				<Must Have
+                                                                                <Must Have
+--------------------------------------------------------------------------------
+Describe the meaning of our first "Release" so our "release markers" have some
+	actual meanings
+                                                                                
 --------------------------------------------------------------------------------
 Define program control flow and structure
 
@@ -22,7 +26,7 @@ Describe "game state" that must be synced between clients
 
 --------------------------------------------------------------------------------
 Describe the tile-based view's characteristics
-																				<Like to Have
+                                                                                <Like to Have
 --------------------------------------------------------------------------------
 Complete Main Menu
 > Write to satisfy main menu use cases
@@ -38,7 +42,7 @@ Get a quick and dirty sprite set made to draw on the map
 --------------------------------------------------------------------------------
 Design on screen HUD
 >make preliminary images to be drawn on screen
-																				<Wont Have
+                                                                                <Wont Have
 --------------------------------------------------------------------------------
 Build keyboard/mouse input system
 
