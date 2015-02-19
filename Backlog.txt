@@ -1,0 +1,57 @@
+#### In current Sprint #########################################################
+
+--------------------------------------------------------------------------------
+Get libgtx "Main Menu" compiling on all team member's computers
+
+--------------------------------------------------------------------------------
+Familiarize ourselves with libGTX
+
+
+#### Backlog ###################################################################<Next release marker
+																				<Must Have
+--------------------------------------------------------------------------------
+Define program control flow and structure
+
+--------------------------------------------------------------------------------
+Investigate client/server models
+> use JMS message passing library?
+
+--------------------------------------------------------------------------------
+Describe "game state" that must be synced between clients
+> Some interfaces should be defined for the rendering system
+
+--------------------------------------------------------------------------------
+Describe the tile-based view's characteristics
+																				<Like to Have
+--------------------------------------------------------------------------------
+Complete Main Menu
+> Write to satisfy main menu use cases
+
+--------------------------------------------------------------------------------
+Implement the program's major structures
+> Stable threaded game loop
+
+--------------------------------------------------------------------------------
+Get a quick and dirty sprite set made to draw on the map
+> Ascii art?
+
+--------------------------------------------------------------------------------
+Design on screen HUD
+>make preliminary images to be drawn on screen
+																				<Wont Have
+--------------------------------------------------------------------------------
+Build keyboard/mouse input system
+
+--------------------------------------------------------------------------------
+Implement a basic map renderer
+
+--------------------------------------------------------------------------------
+Implement the on-screen HUD
+
+--------------------------------------------------------------------------------
+NPC AI system
+
+--------------------------------------------------------------------------------
+Description of the different factions
+> Include their mutual opinions
+
