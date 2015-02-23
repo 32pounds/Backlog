@@ -19,7 +19,6 @@ Define program control flow and structure
 --------------------------------------------------------------------------------
 Investigate client/server models
 > use JMS message passing library?
-- Jordan Lynn
 
 --------------------------------------------------------------------------------
 Describe "game state" that must be synced between clients
