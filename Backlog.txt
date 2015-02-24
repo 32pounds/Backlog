@@ -23,7 +23,7 @@ make/refine class diagrams with accompanying Minimally-Implemented Stub Classes
 --------------------------------------------------------------------------------
 Make class diagrams makefile
 > automatically adding chapters and diagrams from subdirectories would be nice
-                                                                                <Must Have
+                                                                                <Must Have above
 --------------------------------------------------------------------------------
 Investigate client/server models
 > one completely non-understood thing to look into - JMS message passing library
@@ -34,7 +34,7 @@ Describe "game state" that must be synced between clients
 
 --------------------------------------------------------------------------------
 Describe the tile-based view's characteristics
-                                                                                <Like to Have
+                                                                                <Like to Have above
 --------------------------------------------------------------------------------
 Complete Main Menu
 > Write to satisfy main menu use cases
@@ -50,7 +50,6 @@ Get a quick and dirty sprite set made to draw on the map
 --------------------------------------------------------------------------------
 Design on screen HUD
 >make preliminary images to be drawn on screen
-                                                                                <Wont Have
 --------------------------------------------------------------------------------
 Build keyboard/mouse input system
 
@@ -66,4 +65,5 @@ NPC AI system
 --------------------------------------------------------------------------------
 Description of the different factions
 > Include their mutual opinions
+                                                                                <Wont Have above
 
