@@ -2,22 +2,26 @@
 
 --------------------------------------------------------------------------------
 Get libgtx "Main Menu" compiling on all team member's computers
+: full team
 
 --------------------------------------------------------------------------------
 Familiarize ourselves with libGTX
+: full team
 
-#### Backlog ###################################################################<Next release marker
---------------------------------------------------------------------------------
-Describe the meaning of our first "Release" so our "release markers" have some
-	actual meanings
-                                                                                
 --------------------------------------------------------------------------------
 Distill design decisions into standard use cases
 > Extract HW2 use cases we are inheriting
 > Most of this information already exists, just needs formatting
+: full team
 
 --------------------------------------------------------------------------------
-make/refine class diagrams with accompanying Minimally-Implemented Stub Classes
+Make/refine class diagrams to describe the game client
+:full team
+
+#### Backlog ###################################################################<Next release marker
+
+--------------------------------------------------------------------------------
+Write accompanying Minimally-Implemented Stub Classes for class diagrams
 > or (probably often) Interfaces instead of  ^MISC^
 
 --------------------------------------------------------------------------------
