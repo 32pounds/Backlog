@@ -21,6 +21,9 @@ Make/refine class diagrams to describe the game client
 #### Backlog ###################################################################<Next release marker
 
 --------------------------------------------------------------------------------
+Bootstrap a libgtx project in our src github project
+
+--------------------------------------------------------------------------------
 Write accompanying Minimally-Implemented Stub Classes for class diagrams
 > or (probably often) Interfaces instead of  ^MISC^
 
