@@ -16,7 +16,10 @@ Distill design decisions into standard use cases
 
 --------------------------------------------------------------------------------
 Make/refine class diagrams to describe the game client
-:full team
+:(User Interface) Brett Menzies, Maddie Brennan
+:(Rendering) Gabriel Giovanini de Souza, Micheal Mueller
+:(Game State) Alexia Doramus
+:(Networking) Jordan Lynn, Derek Snyder
 
 #### Backlog ###################################################################<Next release marker
 
