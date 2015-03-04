@@ -24,56 +24,124 @@ Make/refine class diagrams to describe the game client
 #### Backlog ###################################################################<Next release marker
 
 --------------------------------------------------------------------------------
-Bootstrap a libgtx project in our src github project
+Bootstrap a libgtx project in our src github repo
+> this could (should?) be finished by the end of the meeting
 
 --------------------------------------------------------------------------------
 Write accompanying Minimally-Implemented Stub Classes for class diagrams
 > or (probably often) Interfaces instead of  ^MISC^
 
 --------------------------------------------------------------------------------
-Make class diagrams makefile
+write class diagrams makefile
 > automatically adding chapters and diagrams from subdirectories would be nice
+> Something so someone can update a class diagram and just run "make" to update 
+    all the png's that need updated
+
+--------------------------------------------------------------------------------
+Get a quick and dirty sprite set made for map and character
+> Describe the tile-based view's characteristics
+> at least 4 tiles and a basic character
+
+--------------------------------------------------------------------------------
+Implement the program's major structures
+> register input handler
+> render thread
+> Game engine loop thread 
+    this is what will eventually be in the server, and replaced in the client 
+    by comms at that time
+> "sectioned off" gamestate that the server will control in the future
+
+--------------------------------------------------------------------------------
+Document how abstract commands will be passed from input to game engine
+> eventually comms system will embody the "to" in the previous sentence
+> movement, leveling, changing equipment, interacting with the map, conversation
+    all need to be supported
                                                                                 <Must Have above
 --------------------------------------------------------------------------------
-Investigate client/server models
-> one completely non-understood thing to look into - JMS message passing library
+write game engine loop to accept commands in the same format that the comms
+    system will accept in the future
+> may not be fully implemented, but should respect the API
 
 --------------------------------------------------------------------------------
-Describe "game state" that must be synced between clients
-> interfaces should be defined for the rendering system
+Initial implementation of input system 
+> just keyboard is fine
 
 --------------------------------------------------------------------------------
-Describe the tile-based view's characteristics
+First game window
+> Launched by main menu
+> simple map loaded in the background
+> character on the map
+> movable map view
+
+--------------------------------------------------------------------------------
+Design and Implement the on-screen HUD
+> will need someone to make the images
+> the data can be bogus until more detailed characters are realized
                                                                                 <Like to Have above
+
+--------------------------------------------------------------------------------
+Implement player stats and leveling logic that is more complete
+> generate character leveling tree
+
+--------------------------------------------------------------------------------
+Implement a more complete renderer
+> items on map
+> central sprite bank managing high-memory usage resources
+
 --------------------------------------------------------------------------------
 Complete Main Menu
 > Write to satisfy main menu use cases
 
 --------------------------------------------------------------------------------
-Implement the program's major structures
-> Stable threaded game loop
+Implement a more powerful map file reader 
+> larger variety of accepted tiles and their properties
+> metadata section along with the tile section
+> items and NPC locations etc.
 
 --------------------------------------------------------------------------------
-Get a quick and dirty sprite set made to draw on the map
-> Ascii art?
+Describe and implement a few different types of items to be found
+> maybe their stats are procedurally generated?
+> maybe their stats come from text files?
 
 --------------------------------------------------------------------------------
-Design on screen HUD
->make preliminary images to be drawn on screen
---------------------------------------------------------------------------------
-Build keyboard/mouse input system
+NPC system
+> can just be dummies on the map
+> should at least by aligned with a faction in spirit
 
 --------------------------------------------------------------------------------
-Implement a basic map renderer
+More detailed Descriptions of the different factions
+> Include their mutual opinions
 
 --------------------------------------------------------------------------------
-Implement the on-screen HUD
+design and implement basic quest system
+
+--------------------------------------------------------------------------------
+implement conversations 
+> should get quests from dummy NPC's
+
+--------------------------------------------------------------------------------
+describe and test the client/server relationship for updating real time data
+> class diagrams (and time diagrams) never got made
+> Document the game state to by synced between clients in excruciating detail
 
 --------------------------------------------------------------------------------
 NPC AI system
+> random walks, returning fire, etc.
 
 --------------------------------------------------------------------------------
-Description of the different factions
-> Include their mutual opinions
+Splice local "comms" system into the game
+> will pass all data between the game engine loop and game state/input through
+    this
+> Then when the game engine loop is moved to the server nothing changes
+    in the client code
+
+--------------------------------------------------------------------------------
+Make connection with server on startup
+
+--------------------------------------------------------------------------------
+move game engine loop to the server program
+
+--------------------------------------------------------------------------------
+More interesting and intelligent NPC AI
                                                                                 <Wont Have above
 
