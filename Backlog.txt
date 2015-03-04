@@ -1,55 +1,40 @@
 #### In current Sprint #########################################################
 
 --------------------------------------------------------------------------------
-Get libgtx "Main Menu" compiling on all team member's computers
-: full team
-
---------------------------------------------------------------------------------
-Familiarize ourselves with libGTX
-: full team
-
---------------------------------------------------------------------------------
-Distill design decisions into standard use cases
-> Extract HW2 use cases we are inheriting
-> Most of this information already exists, just needs formatting
-: full team
-
---------------------------------------------------------------------------------
-Make/refine class diagrams to describe the game client
-:(User Interface) Brett Menzies, Maddie Brennan
-:(Rendering) Gabriel Giovanini de Souza, Micheal Mueller
-:(Game State) Alexia Doramus
-:(Networking) Jordan Lynn, Derek Snyder
-
-#### Backlog ###################################################################<Next release marker
-
---------------------------------------------------------------------------------
 Bootstrap a libgtx project in our src github repo
 > this could (should?) be finished by the end of the meeting
+est 1 hour
 
 --------------------------------------------------------------------------------
 Write accompanying Minimally-Implemented Stub Classes for class diagrams
 > or (probably often) Interfaces instead of  ^MISC^
+est 2 hr
 
 --------------------------------------------------------------------------------
 write class diagrams makefile
 > automatically adding chapters and diagrams from subdirectories would be nice
-> Something so someone can update a class diagram and just run "make" to update 
+> Something so someone can update a class diagram and just run "make" to update
     all the png's that need updated
+est 2 hr
 
 --------------------------------------------------------------------------------
 Get a quick and dirty sprite set made for map and character
 > Describe the tile-based view's characteristics
 > at least 4 tiles and a basic character
+> 32x32 pixels
+est 2hr
 
 --------------------------------------------------------------------------------
 Implement the program's major structures
 > register input handler
 > render thread
-> Game engine loop thread 
-    this is what will eventually be in the server, and replaced in the client 
+> Game engine loop thread
+    this is what will eventually be in the server, and replaced in the client
     by comms at that time
 > "sectioned off" gamestate that the server will control in the future
+
+--------------------------------------------------------------------------------
+Initial map implementation
 
 --------------------------------------------------------------------------------
 Document how abstract commands will be passed from input to game engine
@@ -63,7 +48,7 @@ write game engine loop to accept commands in the same format that the comms
 > may not be fully implemented, but should respect the API
 
 --------------------------------------------------------------------------------
-Initial implementation of input system 
+Initial implementation of input system
 > just keyboard is fine
 > the structure should already exist from the class diagram conversion
 
@@ -73,6 +58,8 @@ First game window
 > simple map loaded in the background
 > character on the map
 > movable map view
+
+#### Backlog ###################################################################<Next release marker
 
 --------------------------------------------------------------------------------
 Design and Implement the on-screen HUD
@@ -94,7 +81,7 @@ Complete Main Menu
 > Write to satisfy main menu use cases
 
 --------------------------------------------------------------------------------
-Implement a more powerful map file reader 
+Implement a more powerful map file reader
 > larger variety of accepted tiles and their properties
 > metadata section along with the tile section
 > items and NPC locations etc.
@@ -117,7 +104,7 @@ More detailed Descriptions of the different factions
 design and implement basic quest system
 
 --------------------------------------------------------------------------------
-implement conversations 
+implement conversations
 > should get quests from dummy NPC's
 
 --------------------------------------------------------------------------------
