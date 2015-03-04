@@ -65,6 +65,7 @@ write game engine loop to accept commands in the same format that the comms
 --------------------------------------------------------------------------------
 Initial implementation of input system 
 > just keyboard is fine
+> the structure should already exist from the class diagram conversion
 
 --------------------------------------------------------------------------------
 First game window
