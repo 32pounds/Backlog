@@ -6,11 +6,6 @@ Bootstrap a libgtx project in our src github repo
 est 1 hour
 
 --------------------------------------------------------------------------------
-Write accompanying Minimally-Implemented Stub Classes for class diagrams
-> or (probably often) Interfaces instead of  ^MISC^
-est 2 hr
-
---------------------------------------------------------------------------------
 write class diagrams makefile
 > automatically adding chapters and diagrams from subdirectories would be nice
 > Something so someone can update a class diagram and just run "make" to update
@@ -23,6 +18,11 @@ Get a quick and dirty sprite set made for map and character
 > at least 4 tiles and a basic character
 > 32x32 pixels
 est 2hr
+
+--------------------------------------------------------------------------------
+Write accompanying Minimally-Implemented Stub Classes for class diagrams
+> or (probably often) Interfaces instead of  ^MISC^
+est 2 hr
 
 --------------------------------------------------------------------------------
 Implement the program's major structures
