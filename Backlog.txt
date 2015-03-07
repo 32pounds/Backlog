@@ -1,9 +1,10 @@
 #### In current Sprint #########################################################
 
 --------------------------------------------------------------------------------
-Bootstrap a libgtx project in our src github repo
+Bootstrap a libGDX project in our src github repo
 > this could (should?) be finished by the end of the meeting
 est 1 hour
+:Brett Menzies
 
 --------------------------------------------------------------------------------
 write class diagrams makefile
@@ -11,6 +12,7 @@ write class diagrams makefile
 > Something so someone can update a class diagram and just run "make" to update
     all the png's that need updated
 est 2 hr
+:Brett Menzies
 
 --------------------------------------------------------------------------------
 Get a quick and dirty sprite set made for map and character
@@ -18,11 +20,17 @@ Get a quick and dirty sprite set made for map and character
 > at least 4 tiles and a basic character
 > 32x32 pixels
 est 2hr
+:Elizabeth Hernandez
 
+--------------------------------------------------------------------------------
+Initial map implementation
+:Micheal Mueller
+                                                                                <Completed above
 --------------------------------------------------------------------------------
 Write accompanying Minimally-Implemented Stub Classes for class diagrams
 > or (probably often) Interfaces instead of  ^MISC^
 est 2 hr
+:Jordan Lynn
 
 --------------------------------------------------------------------------------
 Implement the program's major structures
@@ -32,16 +40,15 @@ Implement the program's major structures
     this is what will eventually be in the server, and replaced in the client
     by comms at that time
 > "sectioned off" gamestate that the server will control in the future
-
---------------------------------------------------------------------------------
-Initial map implementation
+:Gabriel & Alexia
 
 --------------------------------------------------------------------------------
 Document how abstract commands will be passed from input to game engine
 > eventually comms system will embody the "to" in the previous sentence
 > movement, leveling, changing equipment, interacting with the map, conversation
-    all need to be supported
-                                                                                <Must Have above
+    all need to be supported evetually
+:Brett Menzies
+    
 --------------------------------------------------------------------------------
 write game engine loop to accept commands in the same format that the comms
     system will accept in the future
@@ -65,7 +72,6 @@ First game window
 Design and Implement the on-screen HUD
 > will need someone to make the images
 > the data can be bogus until more detailed characters are realized
-                                                                                <Like to Have above
 
 --------------------------------------------------------------------------------
 Implement player stats and leveling logic that is more complete
@@ -79,6 +85,8 @@ Implement a more complete renderer
 --------------------------------------------------------------------------------
 Complete Main Menu
 > Write to satisfy main menu use cases
+> make it actually launch the game
+                                                                                <Must Have above
 
 --------------------------------------------------------------------------------
 Implement a more powerful map file reader
@@ -99,6 +107,7 @@ NPC system
 --------------------------------------------------------------------------------
 More detailed Descriptions of the different factions
 > Include their mutual opinions
+                                                                                <Like to Have above
 
 --------------------------------------------------------------------------------
 design and implement basic quest system
