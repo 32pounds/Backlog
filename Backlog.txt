@@ -25,6 +25,17 @@ est 2hr
 --------------------------------------------------------------------------------
 Initial map implementation
 :Micheal Mueller
+
+--------------------------------------------------------------------------------
+Initial sprite resounce manager
+:Gabriel
+
+--------------------------------------------------------------------------------
+Document how abstract commands will be passed from input to game engine
+> eventually comms system will embody the "to" in the previous sentence
+> movement, leveling, changing equipment, interacting with the map, conversation
+    all need to be supported evetually
+:Brett Menzies
                                                                                 <Completed above
 --------------------------------------------------------------------------------
 Write accompanying Minimally-Implemented Stub Classes for class diagrams
@@ -40,19 +51,16 @@ Implement the program's major structures
     this is what will eventually be in the server, and replaced in the client
     by comms at that time
 > "sectioned off" gamestate that the server will control in the future
-:Gabriel & Alexia
+:(game loop thread) Alexia
 
 --------------------------------------------------------------------------------
-Document how abstract commands will be passed from input to game engine
-> eventually comms system will embody the "to" in the previous sentence
-> movement, leveling, changing equipment, interacting with the map, conversation
-    all need to be supported evetually
-:Brett Menzies
-    
+Initial player class
+> should extend drawable and draw itself onscreen at the right location
+
 --------------------------------------------------------------------------------
-write game engine loop to accept commands in the same format that the comms
-    system will accept in the future
-> may not be fully implemented, but should respect the API
+write game engine loop to accept commands 
+> threadsafe command queue
+> cycle through commands and move the player
 
 --------------------------------------------------------------------------------
 Initial implementation of input system
