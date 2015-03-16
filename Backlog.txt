@@ -61,6 +61,7 @@ Initial player class
 write game engine loop to accept commands 
 > threadsafe command queue
 > cycle through commands and move the player
+:Gabriel
 
 --------------------------------------------------------------------------------
 Initial implementation of input system
