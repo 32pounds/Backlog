@@ -27,16 +27,15 @@ Initial map implementation
 :Micheal Mueller
 
 --------------------------------------------------------------------------------
-Initial sprite resounce manager
+Initial sprite resource manager
 :Gabriel
 
 --------------------------------------------------------------------------------
 Document how abstract commands will be passed from input to game engine
 > eventually comms system will embody the "to" in the previous sentence
 > movement, leveling, changing equipment, interacting with the map, conversation
-    all need to be supported evetually
+    all need to be supported eventually
 :Brett Menzies
-                                                                                <Completed above
 --------------------------------------------------------------------------------
 Write accompanying Minimally-Implemented Stub Classes for class diagrams
 > or (probably often) Interfaces instead of  ^MISC^
@@ -46,62 +45,93 @@ est 2 hr
 --------------------------------------------------------------------------------
 Implement the program's major structures
 > register input handler
-> render thread
 > Game engine loop thread
     this is what will eventually be in the server, and replaced in the client
     by comms at that time
-> "sectioned off" gamestate that the server will control in the future
-:(game loop thread) Alexia
+> central sprite bank managing high-memory usage resources
+: Alexia and Gabriel
 
 --------------------------------------------------------------------------------
 Initial player class
 > should extend drawable and draw itself onscreen at the right location
+: Gabriel
 
 --------------------------------------------------------------------------------
 write game engine loop to accept commands 
 > threadsafe command queue
 > cycle through commands and move the player
-:Gabriel
+: Gabriel
 
 --------------------------------------------------------------------------------
 Initial implementation of input system
 > just keyboard is fine
 > the structure should already exist from the class diagram conversion
-
---------------------------------------------------------------------------------
-First game window
-> Launched by main menu
-> simple map loaded in the background
-> character on the map
-> movable map view
-
+: Gabriel
+                                                                                <Completed above
 #### Backlog ###################################################################<Next release marker
 
 --------------------------------------------------------------------------------
+Scrolling map view
+> should keep active player centered for now
+
+--------------------------------------------------------------------------------
 Design and Implement the on-screen HUD
-> will need someone to make the images
+> more images will need to be made
 > the data can be bogus until more detailed characters are realized
-
---------------------------------------------------------------------------------
-Implement player stats and leveling logic that is more complete
-> generate character leveling tree
-
---------------------------------------------------------------------------------
-Implement a more complete renderer
-> items on map
-> central sprite bank managing high-memory usage resources
+> bonus points for using 9-patch boxes
 
 --------------------------------------------------------------------------------
 Complete Main Menu
 > Write to satisfy main menu use cases
 > make it actually launch the game
+> stretch goal: player sprite selection screen
+
+--------------------------------------------------------------------------------
+code for referencing objects between client and server
+> The game loop changed to refer to objects by ID instead of local reference
+
+--------------------------------------------------------------------------------
+Splice local "comms" system into the game
+> will pass all data between the game engine loop and game state/input through
+    this
+
+--------------------------------------------------------------------------------
+separate the server into another process with its own game state
+
+--------------------------------------------------------------------------------
+code for tracking state changes on the server
+
+--------------------------------------------------------------------------------
+packing commands/state changes into packets    
+
+--------------------------------------------------------------------------------
+unpacking packets into commands/state changes
                                                                                 <Must Have above
+    
+--------------------------------------------------------------------------------
+server maintains a list of active clients and accepts new clients
+
+--------------------------------------------------------------------------------
+main menu sets up server and automates local connection
+
+--------------------------------------------------------------------------------
+Add chat box to on-screen HUD
 
 --------------------------------------------------------------------------------
 Implement a more powerful map file reader
-> larger variety of accepted tiles and their properties
-> metadata section along with the tile section
-> items and NPC locations etc.
+> larger variety of accepted tiles
+> more detailed specification of walkable regions
+> apply rotations to sprites and render multiple sprites together
+   like the carpet under chairs
+> a way to specify item and NPC locations etc.
+                                                                                <Like to Have above
+
+--------------------------------------------------------------------------------
+make a few basic items
+> stack of paper, red stapler, etc.
+
+--------------------------------------------------------------------------------
+track and draw items dropped on the map
 
 --------------------------------------------------------------------------------
 Describe and implement a few different types of items to be found
@@ -109,17 +139,20 @@ Describe and implement a few different types of items to be found
 > maybe their stats come from text files?
 
 --------------------------------------------------------------------------------
+More detailed Descriptions of the different factions
+> Include their mutual opinions
+
+--------------------------------------------------------------------------------
 NPC system
 > can just be dummies on the map
 > should at least by aligned with a faction in spirit
 
 --------------------------------------------------------------------------------
-More detailed Descriptions of the different factions
-> Include their mutual opinions
-                                                                                <Like to Have above
+design and implement basic quest system
 
 --------------------------------------------------------------------------------
-design and implement basic quest system
+Implement player stats and leveling logic that is more complete
+> generate character leveling tree
 
 --------------------------------------------------------------------------------
 implement conversations
@@ -135,17 +168,7 @@ NPC AI system
 > random walks, returning fire, etc.
 
 --------------------------------------------------------------------------------
-Splice local "comms" system into the game
-> will pass all data between the game engine loop and game state/input through
-    this
-> Then when the game engine loop is moved to the server nothing changes
-    in the client code
-
---------------------------------------------------------------------------------
-Make connection with server on startup
-
---------------------------------------------------------------------------------
-move game engine loop to the server program
+give actors health and combat abilities
 
 --------------------------------------------------------------------------------
 More interesting and intelligent NPC AI
