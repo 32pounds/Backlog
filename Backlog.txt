@@ -1,90 +1,57 @@
 #### In current Sprint #########################################################
-
---------------------------------------------------------------------------------
-Bootstrap a libGDX project in our src github repo
-> this could (should?) be finished by the end of the meeting
-est 1 hour
-:Brett Menzies
-
---------------------------------------------------------------------------------
-write class diagrams makefile
-> automatically adding chapters and diagrams from subdirectories would be nice
-> Something so someone can update a class diagram and just run "make" to update
-    all the png's that need updated
-est 2 hr
-:Brett Menzies
-
---------------------------------------------------------------------------------
-Get a quick and dirty sprite set made for map and character
-> Describe the tile-based view's characteristics
-> at least 4 tiles and a basic character
-> 32x32 pixels
-est 2hr
-:Elizabeth Hernandez
-
---------------------------------------------------------------------------------
-Initial map implementation
-:Micheal Mueller
-
---------------------------------------------------------------------------------
-Initial sprite resource manager
-:Gabriel
-
---------------------------------------------------------------------------------
-Document how abstract commands will be passed from input to game engine
-> eventually comms system will embody the "to" in the previous sentence
-> movement, leveling, changing equipment, interacting with the map, conversation
-    all need to be supported eventually
-:Brett Menzies
---------------------------------------------------------------------------------
-Write accompanying Minimally-Implemented Stub Classes for class diagrams
-> or (probably often) Interfaces instead of  ^MISC^
-est 2 hr
-:Jordan Lynn
-
---------------------------------------------------------------------------------
-Implement the program's major structures
-> register input handler
-> Game engine loop thread
-    this is what will eventually be in the server, and replaced in the client
-    by comms at that time
-> central sprite bank managing high-memory usage resources
-: Alexia and Gabriel
-
---------------------------------------------------------------------------------
-Initial player class
-> should extend drawable and draw itself onscreen at the right location
-: Gabriel
-
---------------------------------------------------------------------------------
-write game engine loop to accept commands 
-> threadsafe command queue
-> cycle through commands and move the player
-: Gabriel
-
---------------------------------------------------------------------------------
-Initial implementation of input system
-> just keyboard is fine
-> the structure should already exist from the class diagram conversion
-: Gabriel
-                                                                                <Completed above
-#### Backlog ###################################################################<Next release marker
-
+                                                              <Completed above
 --------------------------------------------------------------------------------
 Scrolling map view
-> should keep active player centered for now
+> should keep active player centered
+:Brett
+
+--------------------------------------------------------------------------------
+portals to new levels
+:Alexia
+
+--------------------------------------------------------------------------------
+Implement a more powerful map file reader
+> larger variety of accepted tiles
+> more detailed specification of walkable regions
+> apply rotations to sprites and render multiple sprites together
+   like the carpet under chairs
+> a way to specify item and NPC locations etc.
 
 --------------------------------------------------------------------------------
 Design and Implement the on-screen HUD
 > more images will need to be made
-> the data can be bogus until more detailed characters are realized
+> the data can be bogus until more detailed characters are developed
 > bonus points for using 9-patch boxes
+:Gabriel
+
+--------------------------------------------------------------------------------
+Dummy monster
+> must interact with the player
+:Michael
+
+--------------------------------------------------------------------------------
+Sprite update
+> Sprites for door/portal/stairs/whatever
+> sprites for a simple monster
+:Elizabeth
 
 --------------------------------------------------------------------------------
 Complete Main Menu
 > Write to satisfy main menu use cases
 > make it actually launch the game
 > stretch goal: player sprite selection screen
+:jordon
+
+--------------------------------------------------------------------------------
+complete second map
+> should be much larger than the screen
+> will become the first level
+:maddie
+
+--------------------------------------------------------------------------------
+Assess networking requirements
+
+#### Backlog ###################################################################<Next release marker
 
 --------------------------------------------------------------------------------
 code for referencing objects between client and server
@@ -102,12 +69,11 @@ separate the server into another process with its own game state
 code for tracking state changes on the server
 
 --------------------------------------------------------------------------------
-packing commands/state changes into packets    
+packing commands/state changes into packets
 
 --------------------------------------------------------------------------------
 unpacking packets into commands/state changes
                                                                                 <Must Have above
-    
 --------------------------------------------------------------------------------
 server maintains a list of active clients and accepts new clients
 
@@ -116,14 +82,6 @@ main menu sets up server and automates local connection
 
 --------------------------------------------------------------------------------
 Add chat box to on-screen HUD
-
---------------------------------------------------------------------------------
-Implement a more powerful map file reader
-> larger variety of accepted tiles
-> more detailed specification of walkable regions
-> apply rotations to sprites and render multiple sprites together
-   like the carpet under chairs
-> a way to specify item and NPC locations etc.
                                                                                 <Like to Have above
 
 --------------------------------------------------------------------------------
