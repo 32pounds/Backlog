@@ -1,21 +1,24 @@
 #### In current Sprint #########################################################
-                                                              <Completed above
+--------------------------------------------------------------------------------
+Dummy monster
+> must interact with the player
+> Keep score of bugs squished
+:Michael
+
 --------------------------------------------------------------------------------
 Scrolling map view
 > should keep active player centered
 :Brett
 
 --------------------------------------------------------------------------------
-portals to new levels
-:Alexia
+Make player move when key is held down instead of once per press
+:Brett
 
 --------------------------------------------------------------------------------
-Implement a more powerful map file reader
-> larger variety of accepted tiles
-> more detailed specification of walkable regions
-> apply rotations to sprites and render multiple sprites together
-   like the carpet under chairs
-> a way to specify item and NPC locations etc.
+portals to new levels
+> Both maps should exist simultaniously
+> Code to change which map gets rendered
+:Alexia
 
 --------------------------------------------------------------------------------
 Design and Implement the on-screen HUD
@@ -25,22 +28,10 @@ Design and Implement the on-screen HUD
 :Gabriel
 
 --------------------------------------------------------------------------------
-Dummy monster
-> must interact with the player
-:Michael
-
---------------------------------------------------------------------------------
 Sprite update
 > Sprites for door/portal/stairs/whatever
 > sprites for a simple monster
 :Elizabeth
-
---------------------------------------------------------------------------------
-Complete Main Menu
-> Write to satisfy main menu use cases
-> make it actually launch the game
-> stretch goal: player sprite selection screen
-:jordon
 
 --------------------------------------------------------------------------------
 complete second map
@@ -49,9 +40,28 @@ complete second map
 :maddie
 
 --------------------------------------------------------------------------------
-Assess networking requirements
+Complete Main Menu
+> Write to satisfy main menu use cases
+> make it actually launch the game
+> stretch goal: player sprite selection screen
+:jordon
 
 #### Backlog ###################################################################<Next release marker
+
+--------------------------------------------------------------------------------
+Implement a more powerful map file reader
+> json tile specification
+    specify walkable, teleport target (x,y), floor tile to draw underneith, etc
+
+--------------------------------------------------------------------------------
+Teleporters that don't constantly teleport back an forth
+> could be implicitly solved by not teleporting to a location that also has
+    an outbound teleporter
+
+--------------------------------------------------------------------------------
+Make map safer
+> full support for variable width maps
+> bounds checking on arguments to prevent crashes
 
 --------------------------------------------------------------------------------
 code for referencing objects between client and server
@@ -66,13 +76,8 @@ Splice local "comms" system into the game
 separate the server into another process with its own game state
 
 --------------------------------------------------------------------------------
-code for tracking state changes on the server
+Pack and unpack state changes and commands locally
 
---------------------------------------------------------------------------------
-packing commands/state changes into packets
-
---------------------------------------------------------------------------------
-unpacking packets into commands/state changes
                                                                                 <Must Have above
 --------------------------------------------------------------------------------
 server maintains a list of active clients and accepts new clients
@@ -85,11 +90,15 @@ Add chat box to on-screen HUD
                                                                                 <Like to Have above
 
 --------------------------------------------------------------------------------
-make a few basic items
-> stack of paper, red stapler, etc.
+give actors health and combat abilities
+> Keep in mind they will be transmitted separately from player sprite/location
 
 --------------------------------------------------------------------------------
 track and draw items dropped on the map
+
+--------------------------------------------------------------------------------
+make a few basic items
+> stack of paper, red stapler, etc.
 
 --------------------------------------------------------------------------------
 Describe and implement a few different types of items to be found
@@ -102,7 +111,6 @@ More detailed Descriptions of the different factions
 
 --------------------------------------------------------------------------------
 NPC system
-> can just be dummies on the map
 > should at least by aligned with a faction in spirit
 
 --------------------------------------------------------------------------------
@@ -124,9 +132,6 @@ describe and test the client/server relationship for updating real time data
 --------------------------------------------------------------------------------
 NPC AI system
 > random walks, returning fire, etc.
-
---------------------------------------------------------------------------------
-give actors health and combat abilities
 
 --------------------------------------------------------------------------------
 More interesting and intelligent NPC AI
