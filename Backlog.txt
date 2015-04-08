@@ -16,7 +16,7 @@ Make player move when key is held down instead of once per press
 
 --------------------------------------------------------------------------------
 portals to new levels
-> Both maps should exist simultaniously
+> Both maps should exist simultaneously
 > Code to change which map gets rendered
 :Alexia
 
@@ -46,12 +46,16 @@ Complete Main Menu
 > stretch goal: player sprite selection screen
 :jordon
 
+--------------------------------------------------------------------------------
+Collaboration diagram and documentation refresh
+:Derek
+
 #### Backlog ###################################################################<Next release marker
 
 --------------------------------------------------------------------------------
 Implement a more powerful map file reader
 > json tile specification
-    specify walkable, teleport target (x,y), floor tile to draw underneith, etc
+    specify walkable, teleport target (x,y), floor tile to draw underneath, etc
 
 --------------------------------------------------------------------------------
 Teleporters that don't constantly teleport back an forth
