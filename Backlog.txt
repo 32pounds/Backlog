@@ -1,86 +1,60 @@
 #### In current Sprint #########################################################
---------------------------------------------------------------------------------
-Dummy monster
-> must interact with the player
-> Keep score of bugs squished
-:Michael
 
 --------------------------------------------------------------------------------
-Scrolling map view
-> should keep active player centered
-:Brett
+Map improvements
+> Teleporters that don't constantly flip you back and forth
+> floor drawn underneith chairs
+> fluff objects added to map (water coolers, paper on desjs)
+: Alexia + Derek
 
 --------------------------------------------------------------------------------
-Make player move when key is held down instead of once per press
-:Brett
+More monster personalities
+> monsters run away from player
+> monsters that run towards the player
+> fix monster collision with multiple players
+: Michael
 
 --------------------------------------------------------------------------------
-portals to new levels
-> Both maps should exist simultaneously
-> Code to change which map gets rendered
-:Alexia
-
---------------------------------------------------------------------------------
-Design and Implement the on-screen HUD
-> more images will need to be made
-> the data can be bogus until more detailed characters are developed
-> bonus points for using 9-patch boxes
-:Gabriel
-
---------------------------------------------------------------------------------
-Sprite update
-> Sprites for door/portal/stairs/whatever
-> sprites for a simple monster
-:Elizabeth
-
---------------------------------------------------------------------------------
-complete second map
-> should be much larger than the screen
-> will become the first level
-:maddie
-
---------------------------------------------------------------------------------
-Complete Main Menu
-> Write to satisfy main menu use cases
-> make it actually launch the game
-> stretch goal: player sprite selection screen
-:jordon
-
---------------------------------------------------------------------------------
-Collaboration diagram and documentation refresh
-:Derek
-
-#### Backlog ###################################################################<Next release marker
-
---------------------------------------------------------------------------------
-Implement a more powerful map file reader
-> json tile specification
-    specify walkable, teleport target (x,y), floor tile to draw underneath, etc
-
---------------------------------------------------------------------------------
-Teleporters that don't constantly teleport back an forth
-> could be implicitly solved by not teleporting to a location that also has
-    an outbound teleporter
-
---------------------------------------------------------------------------------
-Make map safer
-> full support for variable width maps
-> bounds checking on arguments to prevent crashes
+Complete and theme second level
+: Alexia and Elizabeth
 
 --------------------------------------------------------------------------------
 code for referencing objects between client and server
 > The game loop changed to refer to objects by ID instead of local reference
-
---------------------------------------------------------------------------------
-Splice local "comms" system into the game
-> will pass all data between the game engine loop and game state/input through
-    this
+:Brett
 
 --------------------------------------------------------------------------------
 separate the server into another process with its own game state
+:Jordon + Brett
 
 --------------------------------------------------------------------------------
-Pack and unpack state changes and commands locally
+System to packetize and parse lists of Entities and/or Commands
+:Gabriel
+
+--------------------------------------------------------------------------------
+Client/Server comms
+> Should present simple "send this data" interface that gets data to the other
+    instance
+:Jordon
+
+--------------------------------------------------------------------------------
+Setup JUnit with our project
+> make test stubs
+> gradle integration
+:Gabriel + Brett
+
+#### Backlog ###################################################################<Next release marker
+
+--------------------------------------------------------------------------------
+Write unit tests for existing code
+
+--------------------------------------------------------------------------------
+Get documentation up to date with our code
+> javadoc comments on functions
+> structure in plantUML
+
+--------------------------------------------------------------------------------
+Collect documentation, test list, implementation description in final doc
 
                                                                                 <Must Have above
 --------------------------------------------------------------------------------
@@ -90,8 +64,15 @@ server maintains a list of active clients and accepts new clients
 main menu sets up server and automates local connection
 
 --------------------------------------------------------------------------------
+test game with multiple
+
+--------------------------------------------------------------------------------
 Add chat box to on-screen HUD
                                                                                 <Like to Have above
+--------------------------------------------------------------------------------
+Make map safer
+> full support for variable width maps
+> bounds checking on arguments to prevent crashes
 
 --------------------------------------------------------------------------------
 give actors health and combat abilities
@@ -137,7 +118,5 @@ describe and test the client/server relationship for updating real time data
 NPC AI system
 > random walks, returning fire, etc.
 
---------------------------------------------------------------------------------
-More interesting and intelligent NPC AI
                                                                                 <Wont Have above
 
